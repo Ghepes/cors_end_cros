@@ -6,6 +6,8 @@ Cros domain accept with json. From your Domain To accept request, It is set by d
  ### * Exemple json :
 cross cors-domainx.json
 It's up to you how you set setting up to receive requests.  [CROS info: https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS)
+
+[Exemple google Basic CROS config ](https://cloud.google.com/storage/docs/cors-configurations)
 ### EXAMPLES
 ````
 [
