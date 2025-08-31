@@ -26,6 +26,44 @@ It's up to you how you set setting up to receive requests.  [CROS info: https://
   ]
 ````
 
+### EXEMPLES DUAL DOMAIN
+````
+[
+    {
+      "origin": ["*"],
+      "method": ["GET"],
+      "responseHeader": ["Content-Type"],
+      "maxAgeSeconds": 3600
+    },
+    {
+      "origin": ["https://exemple.com", "https://x.exemple.com"],
+      "method": ["PUT", "OPTIONS"],
+      "responseHeader": ["Content-Type", "Content-Length", "ETag"],
+      "maxAgeSeconds": 3600
+    }
+  ]
+
+````
+
+### EXEMPLES DUAL DOMAIN end GET RESTRICT
+````
+[
+    {
+      "origin": ["https://x.exemple.com"], // Only for https://x.exemple.com the content
+      "method": ["GET"],
+      "responseHeader": ["Content-Type"],
+      "maxAgeSeconds": 3600
+    },
+    {
+      "origin": ["https://exemple.com", "https://x.exemple.com"],
+      "method": ["PUT", "OPTIONS"],
+      "responseHeader": ["Content-Type", "Content-Length", "ETag"],
+      "maxAgeSeconds": 3600
+    }
+  ]
+
+````
+
 open CLI and add the command:
 
 ````
