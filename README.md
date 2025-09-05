@@ -64,6 +64,33 @@ It's up to you how you set setting up to receive requests.  [CROS info: https://
 
 ````
 
+Example for Private folder accessible only from a domain (exactly your case with /secure/key.json):
+````
+[
+  {
+    "origin": ["https://blob.domain.com"],
+    "method": ["GET"],
+    "responseHeader": ["Content-Type"],
+    "maxAgeSeconds": 3600
+  }
+]
+````
+
+Example for multiple domains only on GET with 600:
+````
+[
+  {
+    "origin": ["https://vendor.exemple.com", "https://user.exemple.com"],
+    "method": ["GET"],
+    "responseHeader": ["Content-Type"],
+    "maxAgeSeconds": 600
+  }
+]
+````
+
+
+
+
 open CLI and add the command:
 
 ````
