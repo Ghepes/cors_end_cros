@@ -1,4 +1,8 @@
 # cros
+
+attention to the spelling of "cors" and "cros"
+general commands are in "cors"
+
 Cros domain accept with json. From your Domain To accept request, It is set by default to block requests to the bucket, so you must specify where the request comes from "DOMAIN NAME"
 
 ### A simple example of how you can accept requests from a specific domain
