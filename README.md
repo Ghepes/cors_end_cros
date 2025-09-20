@@ -97,7 +97,7 @@ open CLI and add the command:
 gsutil cors set cors-domainx.json gs://domainx.xyz
 ````
 ````
-gsutil cros get gs://domain.xyz
+gsutil cors get gs://domain.xyz
 ````
 
 
